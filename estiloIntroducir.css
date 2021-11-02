@@ -1,0 +1,97 @@
+html,body
+{
+    width: 1300px;
+    margin: 0 auto;
+}
+header
+{
+    width: 1300px;
+    height: 150px;
+    background-color: lightgreen;
+}
+nav
+{
+    width: 1300px;
+    height: 150px;
+    background-color: lightseagreen;
+}
+h1
+{
+    margin:0;
+}
+aside
+{
+   width: 500px;
+   padding-left: 20px;
+   float: left; 
+   background-color: pink;
+   min-height: 300px;
+   overflow: hidden;
+}
+article
+{
+    width: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+    float: left;
+    background-color: aqua;
+    min-height: 500px;
+    padding-top: 50px;
+}
+div{
+    overflow: hidden;
+    background-color: black;
+}
+footer
+{
+    clear: left;
+    width: 1300px;
+    height: 150px;
+    background-color: lightslategray;
+}
+#listado{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    min-height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+#contenido
+{
+    font-size: larger;
+    word-spacing: 3px;
+    padding-left: 1%;
+    border: 1px solid white;
+    margin-left: 40px;   
+    margin-right: 40px;  
+}
+a
+{
+    color: white;
+}
+input {
+    background-color: #08d;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+label{
+    font-weight: bold;
+    font-size: large;
+    
+}  
+#enviar
+{
+    width: 100px;
+    margin-left: 47.5%;
+}  
