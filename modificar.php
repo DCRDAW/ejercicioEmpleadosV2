@@ -63,7 +63,7 @@
                 $id= $_GET["id"];
                 $dni= $_POST["dni"];
                 $telef= $_POST["telef"];
-                $consulta = 'update Empleados set nombre="'.$nombre.'",dni="'.$dni.'",correo="'.$correo.'",telefono="'.$telef.'" where idEmpleado='.$id.';';
+                $consulta = 'update Empleados set nombre="'.$nombre.'",dni="'.$dni.'",correo='.$correo.',telefono="'.$telef.'" where idEmpleado='.$id.';';
                 echo $consulta;
                 $conexion->consulta($consulta);
                 echo'<br /> 
