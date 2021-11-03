@@ -12,7 +12,9 @@
         </select>
         <label>Término de búsqueda</label><br />
         <input type="text" placeholder="Introduce el término" name="termino" required><br />
-        <input type="submit" name="envio">
+        <div id="contenedor">
+        <input type="submit" id="enviar" name="envio">
+        </div>
         </form>';
     echo'<br /> 
       <form method="post" action=""> 
@@ -24,6 +26,7 @@
 <html lang="es" dir="ltr">
     <head>
         <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pagina empleados</title>
         <link rel=stylesheet href=estiloIntroducir.css />
         

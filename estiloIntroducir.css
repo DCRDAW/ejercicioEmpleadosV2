@@ -4,14 +4,14 @@ body
 }
 header
 {
-    width: 100%;
+    width: 100%;/*original: 1300*/
     height: 150px;
     background-color: black;
     color: white;
 }
 nav
 {
-    width: 100%;
+    width: 100%; /*original: 1300*/
     height: 150px;
     background-color: rgb(119, 12, 190);
     color: white;
@@ -22,8 +22,8 @@ h1
 }
 aside
 {
-   width: 38.4615384615%;
-   padding-left: 1.53846153846%;
+   width: 38.4615384615%; /*original: 500px, que es un 38% de 1300*/
+   padding-left: 1.53846153846%; /*original: 20px, que es un 1.5% de 1300*/
    float: left; 
    background-color: black;
    min-height: 300px;
@@ -32,9 +32,9 @@ aside
 }
 article
 {
-    width: 53.8461538462%;
-    padding-left: 3.07692307692%;
-    padding-right: 3.07692307692%;
+    width: 53.8461538462%; /*original: 700px, que es un 53% de 1300*/
+    padding-left: 3.07692307692%; /*original: 40px, que es un 3% de 1300*/
+    padding-right: 3.07692307692%; /*original: 40px, que es un 3% de 1300*/
     float: left;
     background-color: black;
     color: white;
@@ -49,7 +49,7 @@ div{
 footer
 {
     clear: left;
-    width: 100%;
+    width: 100%; /*original: 1300*/
     height: 150px;
     background-color: rgb(119, 12, 190);
     color: white;
@@ -59,7 +59,7 @@ footer
     color: white;
     font-weight: bold;
     min-height: 200px;
-    width: 80%;
+    width: 80%;/*original: 560px, que es un 80% de 700px de article, que es su contenedor*/
     margin: 0 auto;
     padding-top: 1%;
 }
@@ -69,8 +69,8 @@ footer
     word-spacing: 3px;
     padding-left: 1%;
     border: 1px solid white;
-    margin-left: 3.07692307692%;   
-    margin-right: 3.07692307692%;  
+    margin-left: 3.07692307692%; /*original: 40px, que es un 3% de 1300*/   
+    margin-right: 3.07692307692%; /*original: 40px, que es un 3% de 1300*/ 
 }
 a
 {
@@ -94,9 +94,14 @@ label{
     font-weight: bold;
     font-size: large;
     
+}
+#contenedor
+{
+    text-align: center;
 }  
 #enviar
 {
-    width: 100px;
-    margin-left: 47.5%;
+    width:auto; 
+    min-width:  14.2857142857%; /*original: 100px, que es un 14% de 700px de article, que es su contenedor*/
+    /*margin-left: 43%;*/
 }  
