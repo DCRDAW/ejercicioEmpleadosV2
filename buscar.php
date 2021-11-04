@@ -71,23 +71,21 @@
                     }
                     $resultado=$conexion->consulta($consulta);
                     //enseña los resultados solo si los hay
-                    
-                    
+
                       //si el sw esta a 0 significa que ha buscado por id o por dni, por lo que solo podrá devolver 1 fila
                       if($sw==0){
-                        if($resultado->num_rows==0){
+                        if(!$fila= $conexion->sacar()){
                           echo'<h1>nadie encontrado</h1>';
                         }else{
                           echo'<h1>Resultado de la Búsqueda</h1>';
-                          echo '<div id="contenido">';
-                          $filas= $conexion->sacar();
-                          echo "id: " . $filas["idEmpleado"]. " - Nombre: " . $filas["nombre"]. " dni " . $filas["dni"]." - telefono: " . $filas["telefono"]; 
+                          echo '<div id="contenido">';        
+                          echo "id: " . $fila["idEmpleado"]. " - Nombre: " . $fila["nombre"]. " dni " . $fila["dni"]." - telefono: " . $fila["telefono"]; 
                           echo '</div>';
                         }
                       }else{
                         //si el sw esta a 1 significa que ha buscado por nombre, por lo que puede devolver varias filas
                         if($resultado->num_rows==0){
-                          echo'<h1>nadie encontrado</h1>';
+                          echo'<h1>nombre no encontrado</h1>';
                         }else{
                           echo'<h1>Resultado de la Búsqueda</h1>';
                           echo'<div id="contenido">';
