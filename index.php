@@ -31,7 +31,7 @@
                     $conexion= new Conexion();
                     $consulta = 'SELECT * FROM Empleados';
                     $resultado=$conexion->consulta($consulta);
-                    echo '<div id="listado" ';
+                    echo '<div id="listado">';
                     echo 'Resultado del listado :<br />';
                     if ($resultado->num_rows == 0) {
                         echo'error en la consulta';
