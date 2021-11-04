@@ -56,7 +56,7 @@
                       $consulta="select * from Empleados where idEmpleado='".$termino."'";
                       break;
                     case 'nombre':
-                      $consulta="select * from Empleados where nombre='".$termino."'";
+                      $consulta="select * from Empleados where nombre LIKE %'".$termino."'";
                       break;
                     case 'dni':
                       $consulta="select * from Empleados where dni='".$termino."'";
