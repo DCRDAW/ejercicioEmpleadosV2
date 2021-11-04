@@ -65,8 +65,13 @@
                 $dni= '"'.$_POST["dni"].'"';
                 $telef= '"'.$_POST["telef"].'"';
                 $consulta = "insert into Empleados(nombre,dni,correo,telefono) values(".$nombre.",".$dni.",".$correo.",".$telef.")";      
-                echo 'empleado introducido correctamente';
                 $conexion->consulta($consulta);
+                if( $conexion->nfilas()>0){
+                  echo 'empleado introducido correctamente';
+                }else{
+                  echo $conexion->error();
+                }
+                
                   echo'<form  action="">
                     <input type="submit" value="volver a introducir" onclick="window.location.reload()">
                     </form>';

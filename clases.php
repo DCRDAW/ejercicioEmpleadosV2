@@ -15,11 +15,16 @@
             $fila = $this->resultado->fetch_assoc();
             return $fila;
         }
-        function nfilas($resultado){
-
+        function nfilas(){
+            return $this->mysqli->affected_rows;
         }
-        function error($resultado){
-            
+        function error(){
+            if($this->mysqli->errno==1062){
+                return 'error, ese DNI ya esta introducido en la bbdd';
+            }else{
+                return 'error no concebido';
+            }
+           
         }
     }
     
