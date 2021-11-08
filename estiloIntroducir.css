@@ -105,4 +105,12 @@ label{
     width:auto; 
     min-width:  14.2857142857%; /*original: 100px, que es un 14% de 700px de article, que es su contenedor*/
     /*margin-left: 43%;*/
-}  
+} 
+@media only screen and (max-width: 1300px) {
+    aside {
+        display: none;
+    }
+    article{
+        width: 100%;
+    }
+  } 

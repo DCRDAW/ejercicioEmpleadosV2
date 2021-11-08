@@ -91,3 +91,11 @@ input {
     text-align: center;
     width: 100%;/*original: 1300*/
   }
+  @media only screen and (max-width: 1300px) {
+    aside {
+        display: none;
+    }
+    article{
+        width: 100%;
+    }
+  } 
